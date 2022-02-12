@@ -20,9 +20,4 @@ class StudentsController < ApplicationController
     render({ :template => "students/show.html.erb" })
   end
 
-  def details
-    @student_id = params.fetch("input")
-    render({:template => "students/details.html.erb"})
-  end
-
 end
